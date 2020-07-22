@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+    <style>
+        h2{
+            font-family: 'Roboto Slab', serif;
+        }
+        body
+        {
+            background-color: rgb(20,25,46);
+        }
+        .hsty
+        {
+            font-family: 'Rowdies', cursive;
+            color:darkgrey;
+            text-align: center;
+            text-shadow: 0px 0px 10px 2px black;
+        }
+        .divbgsty
+        {
+            background-color:whitesmoke;
+            border:2px solid black;
+            border-radius:5px;
+            margin:auto;
+            margin-top:40px;
+            width:550px;
+            height:580px;
+            box-shadow: 0px 0px 20px 2px whitesmoke;
+        }
+        .divstyform
+        {
+            width:400px;
+            line-height:2px;
+            padding:10px;
+            margin-left:90px;
+            border:1px thin black;
+            border-radius:30px;
+        }
+        .martop
+        {
+            margin-top: 20px;
+        }
+        .button
+        {
+            margin-top:20px;
+            margin-left:120px;
+            color:whitesmoke;
+            width:300px;
+            height:40px;
+            background-color: green;
+            font-size: large;
+            border:none;
+            cursor:pointer;
+        }
+        div input
+        {
+            width:350px;
+            height:40px;
+            background-color: darkgrey;
+            color:black;
+            border:none;
+            font-size: medium;
+        }
+
+        p{
+            text-align: center;
+            color:whitesmoke;
+            font-size: larger;
+            line-height:20px;
+        }
+        p a 
+        {
+            color:lightblue;
+        }
+        ::placeholder
+        {
+            color:black;
+            text-align:left;
+            font-size:medium;
+            padding:4px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="hsty">Registration Page</h1>
+    <form>
+        <div class="divbgsty">
+            <div class="divstyform martop"> 
+                <label for="fname">
+                    <input type="text" name="fname" id="fname" placeholder="First Name">
+                </label>
+            </div>
+            <div class="divstyform">
+                <label for="lname">
+                    <input type="text" name="lname" id="lname" placeholder="Last Name">
+                </label>
+            </div>
+            <div class="divstyform">
+                <label for="email">
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                </label>
+            </div>
+            <div class="divstyform">
+                <label for="phnnum">
+                    <input type="phonenumber" name="phnnum" id="phnnum" placeholder="+91 " maxlength="10">
+                </label>
+            </div>
+            <div class="divstyform" >
+                <label for="date">
+                    <input type="date" name="date" id="date">
+                </label>
+            </div>
+            <div class="divstyform">
+                <label for="pass">
+                    <input type="password" name="pass" id="pass" placeholder="Password">
+                </label>
+            </div>
+            <div class="divstyform">
+                <label for="cpass">
+                    <input type="password" name="cpass" id="cpass" placeholder="Confirm Password">
+                </label>
+            </div>
+                <label for="sub">
+                    <input type="submit" name="submit" id="sub" value="Register" class="button">
+                </label>
+            </div>
+        </div>
+    </form>
+        
+    <p>
+        Aldready have an account? 
+        <span>
+            <a href="#">Login in</a>
+        </span>
+    </p>
+</body>
+</html>
